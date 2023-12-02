@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: Poppins, sans-serif;
+    list-style: none;
+}
+
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: #eee;
+    margin-top: 2rem;
+    color: #333;
+}
+
+.main {
+    max-width: 450px;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+.header {
+    border-bottom: 1px solid #333;
+}
+
+h1 {
+    font-size: 2.4rem;
+}
+
+.header form {
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+.header input {
+    height: 4rem;
+    border-radius: .4rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.header button {
+    position: absolute;
+    height: 4rem;
+    width: 4rem;
+    top: 0;
+    right: 0;
+    color: #fff;
+    background-color: #999;
+    transition: .4s ease-in-out;
+    border-top-right-radius: .4rem;
+    border-bottom-right-radius: .4rem;
+    cursor: pointer;
+}
+
+.header button:hover {
+    font-size: 2.4rem;
+    background-color: #666;
+}
+
+h2 {
+    color: #555;
+}
+
+.task-container {
+    margin-top: 1rem;
+}
+
+.task-container ul {
+    margin-bottom: 2rem;
+}
+
+.task-list .task {
+    position: relative;
+    background-color: #fff;
+    width: 100%;
+    height: 3.5rem;
+    border-radius: .4rem;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    margin-top: .4rem;
+    font-weight: bold;
+    transition: .4s ease-in-out;
+
+}
+
+.task-list .task.hide {
+    display: none;
+}
+
+.task-list .task.done {
+    background-color: hsl(120, 100%, 90%);
+    text-decoration: line-through;
+    transition: .4s ease-in-out;
+}
+
+.task-list .task.delete {
+    background-color: hsl(0, 60%, 40%);
+    height: 0px;
+    transition: 1s;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+
+
+.task-list button {
+    position: absolute;
+    top: .5rem;
+    height: 2rem;
+    width: 2rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    border-radius: 50%;
+    transition: .4s ease-in-out;
+    color: #fff;
+    background-color: #999;
+    cursor: pointer;
+    text-align: center;
+    padding-left: .1rem;
+}
+
+.task-list p {
+    height: 100%;
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+    padding-left: 1rem;
+    padding-top: .2rem;
+}
+
+.task-list .done-btn {
+    right: 3rem;
+}
+
+.task-list .delete-btn {
+    right: .4rem;
+}
+
+.task-list .done-btn:hover {
+    background-color: green;
+}
+
+.task-list .delete-btn:hover {
+    background-color: hsl(0, 60%, 40%);
+}

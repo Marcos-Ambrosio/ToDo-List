@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List Project</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <main class="main">
+        <header class="header">
+            <h1>Adicione uma tarefa</h1>
+            <form action="">
+                <input type="text" placeholder="Escreva o qu estas a pensar...">
+                <button type="submit" class="btn-add"><i class="fa fa-plus"></i></button>
+            </form>
+        </header>
+        <div class="task-container">
+            <h2>Lista de tarefas</h2>
+            <ul class="task-list">
+                <!-- Template -->
+                <li class="template hide task">
+                    <p>Texto aleatorio</p>
+                    <button class="done-btn"><i class="fa fa-check"></i></button>
+                    <button class="delete-btn"><i class="fa fa-trash"></i></button>
+                </li>
+                <li class="template hide task">
+                    <p>Texto aleatorio</p>
+                    <button class="done-btn"><i class="fa fa-check"></i></button>
+                    <button class="delete-btn"><i class="fa fa-trash"></i></button>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/5b8f00096f.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
